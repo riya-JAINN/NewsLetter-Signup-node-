@@ -8,7 +8,7 @@ const app = express();
 let ApiKey = process.env.API_KEY;
 let listId = process.env.LIST_ID;
 let serverNumber = process.env.SERVER_NUMBER;
-// let mailchimpUrl = process.env.URL;
+
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
